@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    /* primary */
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+
+    /* neutral */
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+@layer base{
+    html{
+        font-family: 'Public Sans', sans-serif;
+    }
+
+    body{
+        font-size: 18px;
+    }
+}
+
+@layer utilities{
+   .border {
+        @apply border-[1px] border-solid border-gray-700;
+    }
+}
+
