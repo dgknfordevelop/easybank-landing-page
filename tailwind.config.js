@@ -16,6 +16,9 @@ module.exports = {
       }, 
       zIndex: {
         '1': '1',
+      },
+      spacing: {
+        '90': '90%',
       }
     }
   },
