@@ -41,12 +41,24 @@
        @apply text-sm w-40 h-10 rounded-full font-bold bg-gradient-to-r from-lime-green to-bright-cyan text-white;
    }
 
+   .info-group{
+    @apply lg:flex lg:justify-around xl:justify-center;
+   }    
+
    .info-item{
-       @apply h-[260px] flex flex-col items-center justify-evenly;
+       @apply h-[260px] lg:h-[350px] flex flex-col items-center lg:items-start lg:text-left  justify-evenly md:px-[150px] lg:px-0;
+   }
+
+   .info-svg{
+       @apply w-[75px];
    }
 
    .info-hdng{
-       @apply text-[20px] hdng-color;
+       @apply text-[20px] md:text-[22px] hdng-color;
+   }
+
+   .info-item-text{
+       @apply md:text-[18px] text-grayish-blue lg:w-[200px] ;
    }
 
    .section-card{
@@ -54,7 +66,7 @@
    }
 
    .section-card-img{
-       @apply rounded-t-md;
+       @apply rounded-t-md md:w-full lg:w-[200px] xl:w-[250px] lg:mx-auto;
    }
 
    .section-card-text-group{
@@ -62,21 +74,21 @@
    }
 
    .section-card-caption{
-       @apply text-[12px] mb-1 text-grayish-blue;
+       @apply text-[12px] md:text-[20px] lg:text-[12px] mb-1 text-grayish-blue;
    }
 
    .section-card-headline{
-       @apply text-[17px] mb-2 text-dark-blue;
+       @apply text-[17px] md:text-[20px] lg:text-[17px] mb-2 text-dark-blue;
    }
 
    .section-card-text{
-       @apply text-grayish-blue text-[13.5px];
+       @apply text-grayish-blue text-[13.5px] md:text-[20px] lg:text-[13.5px];
    }
 }
 
 @layer utilities{
    .border {
-        @apply border-[1px] border-solid border-gray-700;
+        @apply border-[1px] border-solid border-red-700;
     }
 
     .hdng-color {
