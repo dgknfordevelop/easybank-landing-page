@@ -7,12 +7,6 @@ git clone https://github.com/dgknfordevelop/easybank-landing-page.git
 cd easybank-landing-page
 npm install
 ```
-
-## Install Tailwind CSS
-```terminal
-npm install -D tailwindcss
-```
-
 ## Run Tailwind CSS
 ```terminal
 npm run watch
