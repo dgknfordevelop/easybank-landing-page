@@ -17,7 +17,7 @@ npm run watch
 gulp
 ```
 ## Credits for Design
-https://www.frontendmentor.io
+https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN
 
 ## License
 This repository is released under the MIT License.
