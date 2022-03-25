@@ -9,24 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./easy-output.css">
   <title> Easybank Landing Page</title>
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
+  <style>.attribution {font-size: 11px; text-align: center;}.attribution a {color: hsl(228, 45%, 44%);}
   </style>
 </head>
 
 <body class="overflow-x-hidden">
 
-  <header class="flex items-center h-16 bg-white sticky top-0 z-1">
+  <header class="flex items-center h-16 bg-white sticky md:relative top-0 z-1">
     
-    <div class="flex justify-between lg:justify-around lg:pr-[590px] xl:pr-[850px] items-center w-full h-full">
+    <div class="flex justify-between lg:justify-around lg:pr-[590px] xl:pr-[730px] items-center w-full h-full">
       <div class="ml-6 lg:ml-0 lg:flex lg:justify-end">
         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
           <defs>
@@ -69,10 +60,20 @@
       </div>
     </div>
 
-    <div class="hidden md:block mr-4">
+    <nav class="header-nav -top-28 absolute md:top-5 md:w-full md:mx-auto">
+      <div class="flex justify-center text-grayish-blue">
+        <a class="md:mr-5 lg:mr-7  text-sm" href="#">Home</a>
+        <a class="md:mr-5 lg:mr-7 text-sm" href="#">About</a>
+        <a class="md:mr-5 lg:mr-7 text-sm" href="#">Contact</a>
+        <a class="md:mr-5 lg:mr-7 text-sm" href="#">Blog</a>
+        <a class="text-sm" href="#">Careers</a>
+      </div>
+    </nav>
+
+    <div class="hidden md:block mr-4 xl:mr-32">
       <button type="button" class="btn">Request Invite</button>
     </div>
-    <nav class="header-nav flex hidden flex-col items-center text-dark-blue rounded-md justify-evenly pt-2 pb-2 h-[325px] w-80 sm:w-90 bg-white absolute right-1/2 translate-x-1/2 top-[87px]">
+    <nav class="side-nav flex hidden flex-col items-center text-dark-blue rounded-md justify-evenly pt-2 pb-2 h-[325px] w-80 sm:w-90 bg-white absolute right-1/2 translate-x-1/2 top-[87px]">
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
@@ -84,7 +85,7 @@
   <main class="flex flex-col items-center 2xl:relative 2xl:overflow-x-hidden">
 
     <div class="telephone lg:w-[700px] absolute w-full h-[570px] -top-[100px] lg:h-90 lg:-top-[35px] 2xl:-top-[105px] lg:-right-[145px]   xl:-pl-[100px]">
-      <img class=" w-90 h-full lg:h-[800px] mr-auto ml-auto" src="img/image-mockups.png" alt="telephones">
+      <img class=" w-90 h-full lg:h-[800px] mr-auto ml-auto" src="./img/image-mockups.png" alt="telephones">
     </div>
 
     <div class="h-[400px] w-full lg:hidden">
@@ -389,8 +390,7 @@
     Coded by <a href="https://github.com/dgknfordevelop">Doğukan Çalışkan</a>.
   </div>
 
-  <script type="text/javascript" src="easy.js">
-
+  <script type="text/javascript" src="./easy.js">
   </script>
 </body>
 
