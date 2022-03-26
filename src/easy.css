@@ -89,11 +89,15 @@
    }
 
    .section-card-headline{
-       @apply text-[17px] md:text-[20px] lg:text-[17px] mb-2 text-dark-blue;
+       @apply text-[17px] md:text-[20px] lg:text-[17px] mb-2 text-dark-blue hover:text-bright-cyan cursor-pointer;
    }
 
    .section-card-text{
        @apply text-grayish-blue text-[13.5px] md:text-[20px] lg:text-[13.5px];
+   }
+
+   .header-nav-hover-after:hover{
+       @apply relative pb-6 after:content-[''] after:absolute after:h-1 after:left-0 after:bottom-0 after:bg-gradient-to-r after:from-lime-green after:to-bright-cyan
    }
 }
 
